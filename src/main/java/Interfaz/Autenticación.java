@@ -1,11 +1,7 @@
 package Interfaz;
 
-import static Interfaz.Cotización.listaEnvios;
-import static Interfaz.RegistroFacturación.listaClientes;
-import static Interfaz.RegistroTarjetas.listaTarjetas;
 import static Interfaz.RegistroUsuario.listaUsuarios;
 import Lógica.Usuario;
-import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class Autenticación extends javax.swing.JFrame {
@@ -127,7 +123,7 @@ public class Autenticación extends javax.swing.JFrame {
         Mu = new MenúUsuario();
         boolean usuarioEncontrado = false;
         //Si el usuario es admin.
-        if ("1".equals(correo.getText()) && "2".equals(contraseña.getText())) {
+        if ("ipc1_202106651@ipc1delivery.com".equals(correo.getText()) && "202106651".equals(contraseña.getText())) {
             Ma.setVisible(true);
             Ma.setLocationRelativeTo(null);
             usuarioEncontrado = true;
